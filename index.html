@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣶⠾⠿⠿⠯⣷⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣾⠛⠁⠀⠀⠀⠀⠀⠀⠈⢻⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠿⠁⠀⠀⠀⢀⣤⣾⣟⣛⣛⣶⣬⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠃⠀⠀⠀⠀⠀⣾⣿⠟⠉⠉⠉⠉⠛⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡟⠋⠀⠀⠀⠀⠀⠀⠀⣿⡏⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣠⡿⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡍⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣠⣼⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠷⣤⣤⣠⣤⣤⡤⡶⣶⢿⠟⠹⠿⠄⣿⣿⠏⠀⣀⣤⡦⠀⠀⠀⠀⣀⡄
+⢀⣄⣠⣶⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠓⠚⠋⠉⠀⠀⠀⠀⠀⠀⠈⠛⡛⡻⠿⠿⠙⠓⢒⣺⡿⠋⠁
+⠉⠉⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀
+
+SagarShips
+build • break • learn • ship
+
+-->
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>SagarShips</title>
+
+<meta
+  name="description"
+  content="Building hardware, software and security projects."
+/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="SagarShips" />
+<meta
+  property="og:description"
+  content="build • break • learn • ship"
+/>
+<meta property="og:url" content="https://sagarships.me" />
+<meta property="og:type" content="website" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="SagarShips" />
+<meta
+  name="twitter:description"
+  content="build • break • learn • ship"
+/>
+
+<link id="favicon" rel="icon" href="" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --bg: #000;
+    --text: #fff;
+    --muted: #666;
+  }
+
+  body {
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: clamp(4rem, 10vw, 7rem);
+    font-weight: 700;
+    letter-spacing: -0.09em;
+    line-height: 1;
+  }
+
+  .subtitle {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  .socials {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .socials a {
+    color: var(--muted);
+    text-decoration: none;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+
+  .socials a:hover {
+    color: var(--text);
+  }
+</style>
+
+</head>
+
+<body>
+
+<main class="container">
+
+  <h1>SagarShips</h1>
+
+  <p class="subtitle">
+    build • break • learn • ship
+  </p>
+
+  <div class="socials">
+    <a
+      href="https://x.com/sagarships"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      X
+    </a>
+
+  </div>
+
+</main>
+
+<script>
+  const emojis = ["🌊", "🚢"];
+  let index = 0;
+
+  function setFavicon(emoji) {
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <text y=".9em" font-size="90">${emoji}</text>
+      </svg>
+    `;
+
+    const url =
+      "data:image/svg+xml," + encodeURIComponent(svg);
+
+    document
+      .getElementById("favicon")
+      .setAttribute("href", url);
+  }
+
+  setFavicon(emojis[0]);
+
+  setInterval(() => {
+    index = (index + 1) % emojis.length;
+    setFavicon(emojis[index]);
+  }, 3000);
+
+  console.log(`
+🚢 SagarShips
+
+build • break • learn • ship
+
+Thanks for peeking behind the curtain.
+`);
+</script>
+
+</body>
+</html>
